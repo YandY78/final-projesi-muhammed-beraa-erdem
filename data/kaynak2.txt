@@ -1,0 +1,5 @@
+RAG, Retrieval Augmented Generation anlamına gelir.
+Önce kaynaklardan bilgi aranır.
+Daha sonra yapay zeka bu bilgileri kullanarak cevap üretir.
+SHAP açıklanabilir yapay zeka yöntemidir.
+Makine öğrenmesi modellerinin kararlarını yorumlar.

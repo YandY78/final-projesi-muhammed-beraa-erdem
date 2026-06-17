@@ -1,0 +1,6 @@
+Yapay zeka, insan zekasını taklit eden sistemlerin geliştirilmesidir.
+Makine öğrenmesi yapay zekanın alt dalıdır.
+Derin öğrenme ise çok katmanlı sinir ağlarını kullanır.
+RAG, Retrieval Augmented Generation anlamına gelir.
+RAG sistemleri önce kaynaklarda arama yapar.
+Sonra yapay zeka cevabı oluşturur.
