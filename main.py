@@ -22,11 +22,11 @@ def soru_sor():
 
                 if "rag" in soru and "rag" in icerik.lower():
 
-                    cevap = icerik
+                    cevap = f"Kaynak: {dosya}\n\n{icerik}"
 
                 elif "shap" in soru and "shap" in icerik.lower():
 
-                    cevap = icerik
+                    cevap = f"Kaynak: {dosya}\n\n{icerik}"
 
     sonuc.config(text=cevap)
 
