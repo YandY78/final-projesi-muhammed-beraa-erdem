@@ -1,1 +1,2 @@
-SHAP modeli açıklanabilir yapay zeka yöntemlerinden biridir.
+SHAP açıklanabilir yapay zeka yöntemidir.
+Makine öğrenmesi modellerinin kararlarını yorumlar.

@@ -1,40 +1,76 @@
+import tkinter as tk
 import os
 
-kaynaklar = ""
 
-for dosya in os.listdir("data"):
+def soru_sor():
 
-    if dosya.endswith(".txt"):
+    soru = giris.get().lower()
 
-        with open(
-            os.path.join("data", dosya),
-            "r",
-            encoding="utf-8"
-        ) as f:
+    cevap = "Bu bilgi kaynaklarda bulunamadı."
 
-            kaynaklar += f.read()
-            kaynaklar += "\n"
+    for dosya in os.listdir("data"):
+
+        if dosya.endswith(".txt"):
+
+            with open(
+                os.path.join("data", dosya),
+                "r",
+                encoding="utf-8"
+            ) as f:
+
+                icerik = f.read()
+
+                if "rag" in soru and "rag" in icerik.lower():
+
+                    cevap = icerik
+
+                elif "shap" in soru and "shap" in icerik.lower():
+
+                    cevap = icerik
+
+    sonuc.config(text=cevap)
 
 
-while True:
+pencere = tk.Tk()
 
-    soru = input("\nSorunuz: ").lower()
+pencere.title("Akademik Yapay Zeka Asistanı")
 
-    if "rag" in soru:
+pencere.geometry("700x500")
 
-        print("""
-RAG, Retrieval Augmented Generation anlamına gelir.
-RAG sistemleri önce kaynaklarda arama yapar.
-Sonra yapay zeka cevabı oluşturur.
-""")
 
-    elif "shap" in soru:
+baslik = tk.Label(
+    pencere,
+    text="Akademik Yapay Zeka Asistanı",
+    font=("Arial", 16)
+)
 
-        print("""
-SHAP açıklanabilir yapay zeka yöntemidir.
-Makine öğrenmesi modellerinin kararlarını yorumlar.
-""")
+baslik.pack(pady=15)
 
-    else:
 
-        print("Bu bilgi kaynaklarda bulunamadı.")
+giris = tk.Entry(
+    pencere,
+    width=60
+)
+
+giris.pack(pady=10)
+
+
+buton = tk.Button(
+    pencere,
+    text="Sor",
+    command=soru_sor
+)
+
+buton.pack(pady=10)
+
+
+sonuc = tk.Label(
+    pencere,
+    text="",
+    wraplength=600,
+    justify="left"
+)
+
+sonuc.pack(pady=20)
+
+pencere.mainloop()
