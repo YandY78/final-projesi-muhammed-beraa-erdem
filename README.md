@@ -14,6 +14,20 @@ Kullanıcı soru sorduğunda sistem kaynak dosyalarını tarar ve ilgili bilgiyi
 * Kaynak gösterme özelliği
 * GitHub ile sürüm kontrolü
 
+## Test Senaryoları
+
+### Başarılı Testler
+
+* RAG nedir?
+* SHAP nedir?
+
+### Başarısız Testler
+
+* Türkiye'nin başkenti nedir?
+* Python'u kim geliştirdi?
+
+Sistem yalnızca kaynak dosyalarda bulunan bilgilere cevap vermektedir.
+
 ## Kullanılan Teknolojiler
 
 * Python
