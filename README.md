@@ -60,6 +60,15 @@ python main.py
 3. Sor butonuna basın.
 4. Sistem cevabı ve kaynak bilgisini gösterecektir.
 
+## Yapay Zeka Araçları
+
+Bu proje geliştirilirken aşağıdaki yapay zeka araçlarından yararlanılmıştır:
+
+* ChatGPT
+* Google Gemini
+
+Bu araçlar kod geliştirme, dokümantasyon oluşturma ve hata ayıklama süreçlerinde destek amaçlı kullanılmıştır.
+
 ## Kullanım Senaryosu
 
 Örnek:
